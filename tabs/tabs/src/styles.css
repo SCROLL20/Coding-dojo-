@@ -1,0 +1,55 @@
+/* src/styles.css */
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.tabs {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tab-headers {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab-header {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.tab-header:hover {
+    background-color: #e1e1e1;
+}
+
+.tab-header.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin-top: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
